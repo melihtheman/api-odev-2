@@ -1,0 +1,108 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #f9f9f9;
+  }
+  .card h3 {
+    margin: 0;
+    padding: 10px 0;
+  }
+  .card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+
+
+/* Main container for the posts */
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each individual post card */
+.post-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Post title styling */
+.post-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Post body content styling */
+.post-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Styling for the 'Title' and 'Body' section headers */
+.post-card p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Spacing between cards */
+.post-card + .post-card {
+  margin-top: 15px;
+}
+
+/* Mobile responsiveness: Cards will stack in smaller screens */
+@media (max-width: 600px) {
+  .post-container {
+    grid-template-columns: 1fr;
+  }
+
+  .post-card {
+    padding: 15px;
+  }
+
+  .post-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .post-card p {
+    font-size: 0.9rem;
+  }
+}
+
+
+  
